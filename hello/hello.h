@@ -1,3 +1,2 @@
 void say(char *);
-
-char *ask(char *);
+unsigned long ask(char **);

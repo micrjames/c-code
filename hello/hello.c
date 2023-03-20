@@ -5,8 +5,10 @@
 int main() {
    char *message = NULL;
 
-   char *msg = ask(message);
-   say(msg);
+   unsigned long read = ask(&message);
+   if(read != -1)
+	  say(message);
+   else printf("message not read ... \n");
 
    free(message);
 
