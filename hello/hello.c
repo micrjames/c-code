@@ -8,7 +8,7 @@ int main() {
    unsigned long read = ask(&message);
    if(read != -1)
 	  say(message);
-   else printf("message not read ... \n");
+   else say("message not read ... \n");
 
    free(message);
 
