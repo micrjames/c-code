@@ -7,11 +7,12 @@ int main() {
    unsigned long read = ask("What is your name?", &message);
 
    if(read != -1) {
-	  char *msg = upper(message);
-	  say("Hello", msg);
+	  str_trim(&message);
+	  title(&message);
+	  str_cat(&message, "!");
+	  say("Hello", message);
    }
    else say("", "message not read ... \n");
-
 
    free(message);
 
