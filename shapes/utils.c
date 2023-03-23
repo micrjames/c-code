@@ -6,13 +6,16 @@
 bool is_perim(int i, int j, int boundary[]) {
    return j == boundary[1] || i == boundary[0] || j == boundary[2] || i == boundary[3];
 }
-void draw_sq(int size) {
+void draw_sq(int size, bool fill) {
+   char int_ch;
+   if(fill) int_ch = '*';
+   else int_ch = ' ';
    int boundary[] = { 0 , 0, size-1, size-1 };
    for(int j = 0; j < size; j++) {
        for(int i = 0; i < size; i++)
           if(is_perim(i, j, boundary))
              printf("%c", '*');
-          else printf("%c", ' ');                                                                       
+          else printf("%c", int_ch);                                                                       
              printf("\n");
        }
 }

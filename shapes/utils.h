@@ -1,6 +1,6 @@
 #include "defs.h"
 
-void draw_sq(int);
+void draw_sq(int, bool);
 bool is_perim(int, int, int []);
 int ctoi(char);
 void str_trim(char **);
