@@ -1,8 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 #include "defs.h"
 
+void draw_isos(int height, bool fill) {
+   char int_ch;
+   if(fill) int_ch = '*';
+   else int_ch = ' ';
+   int base = 2*height;
+   double midpoint = base/2.0f;
+   for(int j = 0; j < height+1; j++) {
+	  for(int i = 0; i < base+1; i++) {
+		 if(i == ceil(midpoint+j) || i == ceil(midpoint-j) || j == height)
+			printf("%c", '*');
+		 else if(i < ceil(midpoint+j) && i > ceil(midpoint-j) && j < height) {
+			printf("%c", int_ch);
+		 }
+	     else printf("%c", ' ');
+	  }
+	  printf("\n");
+   }
+}
 bool is_perim(int i, int j, int boundary[]) {
    return j == boundary[1] || i == boundary[0] || j == boundary[3] || i == boundary[2];
 }
@@ -15,8 +34,8 @@ void draw_rect(int l, int w, bool fill) {
        for(int i = 0; i < l; i++)
           if(is_perim(i, j, boundary))
              printf("%c", '*');
-          else printf("%c", int_ch);                                                                       
-             printf("\n");
+          else printf("%c", int_ch);
+		  printf("\n");
        }
 }
 void draw_sq(int size, bool fill) {
