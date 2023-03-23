@@ -5,8 +5,7 @@
 int main(int argc, char **argv) {
 
    if(strcmp(argv[1], "square") == 0) {
-	   draw_sq(ctoi(*argv[2]), true);
-	   draw_sq(ctoi(*argv[2]), false);
+	   draw_rect(ctoi(*argv[2]), ctoi(*argv[3]), true);
    }
    else
 	  say("No", "choose something else.");

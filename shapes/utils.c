@@ -4,20 +4,23 @@
 #include "defs.h"
 
 bool is_perim(int i, int j, int boundary[]) {
-   return j == boundary[1] || i == boundary[0] || j == boundary[2] || i == boundary[3];
+   return j == boundary[1] || i == boundary[0] || j == boundary[3] || i == boundary[2];
 }
-void draw_sq(int size, bool fill) {
+void draw_rect(int l, int w, bool fill) {
    char int_ch;
    if(fill) int_ch = '*';
    else int_ch = ' ';
-   int boundary[] = { 0 , 0, size-1, size-1 };
-   for(int j = 0; j < size; j++) {
-       for(int i = 0; i < size; i++)
+   int boundary[] = { 0 , 0, l-1, w-1 };
+   for(int j = 0; j < w; j++) {
+       for(int i = 0; i < l; i++)
           if(is_perim(i, j, boundary))
              printf("%c", '*');
           else printf("%c", int_ch);                                                                       
              printf("\n");
        }
+}
+void draw_sq(int size, bool fill) {
+   draw_rect(size, size, fill);
 }
 int ctoi(char c) {
     return c-'0';
