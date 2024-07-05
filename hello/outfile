@@ -1,3 +1,3 @@
 # set the output file configuration here
-target =
-util_funcs =
+target = hello
+util_funcs = hello_funcs
