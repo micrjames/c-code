@@ -7,7 +7,6 @@ objects = $(target).o $(util_funcs).o
 $(target) : $(objects)
 	cc -o $(target) $(objects) 
 $(util_funcs).o : $(helpers)
-	cc -c $(util_funcs).c
 else
 $(target) : $(target).o
 	cc -o $(target) $(target).o 
