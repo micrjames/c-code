@@ -20,9 +20,9 @@ As the code is written based on the material contain in the K&R book referenced 
 Furthermore, a makefile for use in basic code can be found in the *makefile_template* directory.
 
 ## Contents
-    ## Hello World Examples
-    ## Greeting
-    ## Temperature
+### Hello World Examples
+### Greeting
+### Temperature
 
 ## Setup
 Simply change from the main directory of *c-code* to the directory that contains the relevant code. And, *copy* the makefile template files to your project. Within *outfile*, fill in the *target* file and the *util_funcs* as a list. An example of setting up the *outfile* can be found in the other project directories.
