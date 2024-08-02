@@ -1,3 +1,4 @@
 # set the output file configuration here
 target = hello
 util_funcs = hello_funcs
+libs = 

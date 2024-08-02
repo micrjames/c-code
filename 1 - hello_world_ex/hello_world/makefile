@@ -1,7 +1,7 @@
 include ./defnfile
 
 $(target) : $(object_file)
-	cc -o $(target) $(object_file) 
+	cc -o $(target) $(object_file) $(libs)
 ifdef util_funcs
 	$(util_funcs).o : $(helpers)
 endif
