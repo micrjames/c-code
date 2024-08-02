@@ -1,7 +1,8 @@
 #include <ncurses.h>
+#include "base_ncurses/base_ncurses.h"
 
 int main() {	
-	initscr();	  				/* Start curses mode 		       */
+	open(FALSE);
 	printw("Hello World !!!");	/* Print Hello World		       */
 								/* on a window called stdscr	   */
 								/* at the current (y, x) co-ords   */
@@ -9,9 +10,7 @@ int main() {
 	/* updates a few flags and data structures and writes the data
 	 * to a buffer corresponding to stdscr
 	 */
-	refresh();			        /* Print it on to the real screen  */
-	getch();			        /* Wait for user input             */
-	endwin();			        /* End curses mode		           */
+	close();
 
 	return 0;
 }

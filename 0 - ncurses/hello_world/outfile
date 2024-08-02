@@ -1,4 +1,4 @@
 # set the output file configuration here
 target = hello_world
-util_funcs =
+util_funcs = base_ncurses/base_ncurses
 libs = -lncurses
