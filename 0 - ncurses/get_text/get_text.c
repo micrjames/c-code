@@ -1,10 +1,10 @@
 #include <ncurses.h>
-#include "base_ncurses.h"
+#include "base_ncurses/base_ncurses.h"
 
 int main() {
    int ch;
 
-   open();
+   open(TRUE);
 
    printw("Type any character to see it in bold.\n");
    ch = getch();
