@@ -1,4 +1,4 @@
 # set the output file configuration here
 target = hello_world
 util_funcs =
-libs = # -lncurses
+libs = -lncurses

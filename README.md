@@ -22,6 +22,9 @@ Furthermore, a makefile for use in basic code can be found in the *makefile_temp
 ## Contents
 ### ncurses
 #### Hello, World
+A basic example which gets a minimalistic window created displaying the text 'Hello World'.
+#### Get Text
+A less basic example than the 'Hello, World' example where we can input and then output a character or characters.
 ### Hello World Examples
 ### Greeting
 ### Temperature
