@@ -1,7 +1,7 @@
 include ./outfile
 
 ifdef util_funcs
-helpers = $(util_funcs).c $(target).h
+helpers = $(util_funcs).c $(util_funcs).h
 objects = $(target).o $(util_funcs).o
 
 object_file = $(objects)

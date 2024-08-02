@@ -1,4 +1,4 @@
 # set the output file configuration here
 target = get_text
-util_funcs =
+util_funcs = base_ncurses
 libs = -lncurses

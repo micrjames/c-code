@@ -1,12 +1,10 @@
 #include <ncurses.h>
+#include "base_ncurses.h"
 
 int main() {
    int ch;
 
-   initscr();
-   raw();
-   keypad(stdscr, TRUE);
-   noecho();
+   open();
 
    printw("Type any character to see it in bold.\n");
    ch = getch();
@@ -19,9 +17,7 @@ int main() {
 	  attroff(A_BOLD);
    }
 
-   refresh();
-   getch();
-   endwin();
+   close();
 
    return 0;
 }
