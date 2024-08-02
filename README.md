@@ -20,6 +20,8 @@ As the code is written based on the material contain in the K&R book referenced 
 Furthermore, a makefile for use in basic code can be found in the *makefile_template* directory.
 
 ## Contents
+### ncurses
+#### Hello, World
 ### Hello World Examples
 ### Greeting
 ### Temperature
