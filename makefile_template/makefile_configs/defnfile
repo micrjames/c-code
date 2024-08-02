@@ -1,4 +1,4 @@
-include ./outfile
+include ./makefile_configs/outfile
 
 ifdef util_funcs
 helpers = $(util_funcs).c $(target).h

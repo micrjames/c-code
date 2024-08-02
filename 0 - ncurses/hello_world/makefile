@@ -1,4 +1,4 @@
-include ./defnfile
+include ./makefile_configs/defnfile
 
 $(target) : $(object_file)
 	cc -o $(target) $(object_file) $(libs)
